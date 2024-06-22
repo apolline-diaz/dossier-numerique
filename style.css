@@ -114,6 +114,22 @@ img {
   cursor: none;
 }
 
+button {
+  width: 25%;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem;
+  background-color: rgb(255, 181, 255);
+  color: #111;
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 130, 255);
+}
+
 .page1 {
   min-height: 100vh;
   width: 100%;
@@ -190,22 +206,6 @@ img {
   cursor: pointer;
   color: rgb(255, 135, 255);
   text-decoration: underline;
-}
-
-.page2-right button {
-  width: 25%;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  border: none;
-  padding: 1rem;
-  background-color: rgb(255, 181, 255);
-  color: #111;
-  margin-top: 20px;
-}
-
-.page2-right button:hover {
-  cursor: pointer;
-  background-color: rgb(255, 130, 255);
 }
 
 .page3 {

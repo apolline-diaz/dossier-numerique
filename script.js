@@ -90,6 +90,26 @@ boxes.forEach(function (elem) {
     crsr.style.backgroundImage = `none`;
   });
 
+  // Bouton Portfolio
+  document.addEventListener("DOMContentLoaded", function () {
+    const pdfButton = document.getElementById("pdf-button");
+    pdfButton.addEventListener("click", function () {
+      window.open("assets/Experience_Cinema_Multimedia.pdf", "_blank");
+    });
+  });
+
+  // Archive de séance
+  document.addEventListener("DOMContentLoaded", function () {
+    const archiveScreening = document.getElementById("archive-screening");
+    archiveScreening.addEventListener("click", function () {
+      window.open(
+        "https://laclefrevival.org/project/jennifers-body-carte-blanche-a-la-clef-revival/",
+        "_blank"
+      );
+    });
+  });
+
+  // Récupération des données de projets
   let projectData = {};
 
   fetch("data.json")

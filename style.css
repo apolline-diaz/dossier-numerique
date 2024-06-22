@@ -96,7 +96,7 @@ img {
   padding: 1em;
 }
 
-#purple {
+/* #purple {
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -106,7 +106,7 @@ img {
   opacity: 0;
   display: none;
   transition: opacity ease 1s;
-}
+} */
 
 .cursor {
   height: 20px;
@@ -262,32 +262,60 @@ img {
   z-index: 9;
 }
 
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding-top: 100px;
+}
+
 .page3 h1 {
   font-size: 6.8vw;
   font-weight: 300;
   color: #111;
   margin-left: 100px;
+  margin-bottom: 5rem;
 }
-.page3-part1 {
+
+.page3-slider {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
 }
-.page3-part1 .img-1 {
+
+.page3-slider .row {
+  display: flex;
+  gap: 10px;
+  animation: scroll 30s linear infinite;
+}
+
+.page3-slider img {
+  width: auto;
   height: 300px;
-  margin-top: 160px;
-}
-.page3-part1 .img-2 {
-  height: 200px;
-  margin-top: 40px;
+  padding: 2rem;
+  margin-left: 1rem;
+  background: rgb(255, 181, 255);
 }
 
-.page3-part1 .img-3 {
-  height: 200px;
-  margin-top: 40px;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid #6c6c6c;
+  position: relative;
+  z-index: 9;
+}
 .page5 {
   min-height: 100vh;
   width: 100%;

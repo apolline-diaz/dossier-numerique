@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "image": "assets/app-mobile.png",
+      "title": "Application mobile",
+      "tech": "Kotlin, Spring Boot",
+      "description": "Application  sur Android pour découvrir des spots urbains insolites. ",
+      "linkGit": "https://github.com/apolline-diaz/App-mobile-Android-Urbanspots",
+      "linkDemo": ""
+    },
+    {
+      "image": "assets/movie-app.png",
+      "title": "Site de référencement cinéma",
+      "tech": "HTML, CSS, React, Tailwind, API",
+      "description": "Projet personnel (en cours) de site d'actualité avec catalogue de films.",
+      "linkGit": "https://github.com/apolline-diaz/Movie-App",
+      "linkDemo": "https://apolline-diaz.github.io/Movie-App"
+    },
+    {
+      "image": "assets/to-do-list.png",
+      "title": "Todo-List",
+      "tech": "HTML, Bootstrap, React, Express, PostgreSQL, API REST",
+      "description": "Gestionnaire de tâches avec une base de données.",
+      "linkGit": "https://github.com/apolline-diaz/to-do-list/tree/main",
+      "linkDemo": ""
+    },
+    {
+      "image": "assets/plateforme.png",
+      "title": "Plateforme e-commerce",
+      "tech": "HTML, CSS, React, MySQL, Express, API REST",
+      "description": "Plateforme de vente de meubles d'occasion, avec une base de données.",
+      "linkGit": "https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble",
+      "linkDemo": "https://vimeo.com/924123048?share=copy"
+    },
+    {
+      "image": "assets/extension.png",
+      "title": "Extension Chrome",
+      "tech": "HTML, CSS, JavaScript",
+      "description": "Page Nouvel onglet transformée avec l'univers du studio Ghibli et doté d'outils.",
+      "linkGit": "https://github.com/apolline-diaz/Ghibli-New-Tab-Browser-Extension",
+      "linkDemo": "https://vimeo.com/927429709?share=copy"
+    },
+    {
+      "image": "assets/pokedex.png",
+      "title": "Pokédex",
+      "tech": "HTML, CSS, React, API",
+      "description": "Encyclopédie numérique qui recense les Pokémon à partir de PokeAPI.",
+      "linkGit": "https://github.com/apolline-diaz/Pokedex",
+      "linkDemo": "https://apolline-diaz.github.io/Pokedex/"
+    },
+    {
+      "image": "assets/pico-8-videogame.png",
+      "title": "Jeu vidéo Pico 8",
+      "tech": "Lua",
+      "description": "Projet personnel pour un anniversaire. Le concept : éliminer 27 chatons pour découvrir son cadeau.",
+      "linkGit": "https://github.com/apolline-diaz/Pico-8-Shooter-Birthday-Video-Game",
+      "linkDemo": "https://lawrens-shyboi.itch.io/queen-of-bad-bitches"
+    }
+  ]
+}

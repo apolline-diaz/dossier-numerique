@@ -90,3 +90,45 @@ boxes.forEach(function (elem) {
     crsr.style.backgroundImage = `none`;
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let projectData = {};
+
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      projectData = data.projects;
+    })
+    .catch((error) => console.error("Error loading JSON data:", error));
+
+  const boxes = document.querySelectorAll(".box");
+  const popup = document.getElementById("popup");
+  const popupClose = document.getElementById("popup-close");
+  const popupContent = document.getElementById("popup-content");
+  const popupTitle = document.getElementById("popup-title");
+  const popupTech = document.getElementById("popup-tech");
+  const popupDescription = document.getElementById("popup-description");
+
+  boxes.forEach((box) => {
+    box.addEventListener("click", function () {
+      const projectId = box.getAttribute("data-id");
+      const project = projectData[projectId];
+
+      popupContent.src = project.image;
+      popupTitle.textContent = project.title;
+      popupTech.textContent = project.tech;
+      popupDescription.textContent = project.description;
+      popup.style.display = "block";
+    });
+  });
+
+  popupClose.addEventListener("click", function () {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});

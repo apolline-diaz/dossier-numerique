@@ -73,52 +73,54 @@
           </div>
           <div class="page5">
             <h2>2023/2024</h2>
-            <div class="box" data-image="assets/app-mobile.png">
+            <div class="box" data-id="0" data-image="assets/app-mobile.png">
               <h3>Application mobile</h3>
               <h4>Kotlin, Spring Boot</h4>
             </div>
-            <div class="box" data-image="assets/movie-app.png">
+            <div class="box" data-id="1" data-image="assets/movie-app.png">
               <h3>Site de référencement cinéma</h3>
               <h4>HTML, CSS, React, Tailwind, API</h4>
             </div>
-            <div class="box" data-image="assets/to-do-list.png">
+            <div class="box" data-id="2" data-image="assets/to-do-list.png">
               <h3>Todo-List</h3>
               <h4>HTML, Bootstrap, React, Express, PostgreSQL, API REST</h4>
             </div>
-            <div class="box" data-image="assets/plateforme.png">
+            <div class="box" data-id="3" data-image="assets/plateforme.png">
               <h3>Plateforme e-commerce</h3>
               <h4>HTML, CSS, React, MySQL, Express, API REST</h4>
             </div>
-            <div class="box" data-image="assets/extension.png">
+            <div class="box" data-id="4" data-image="assets/extension.png">
               <h3>Extension Chrome</h3>
               <h4>HTML, CSS, JavaScript</h4>
             </div>
-            <div class="box" data-image="assets/pokedex.png">
+            <div class="box" data-id="5" data-image="assets/pokedex.png">
               <h3>Pokédex</h3>
               <h4>HTML, CSS, React, API</h4>
             </div>
-            <div class="box" data-image="assets/pico-8-videogame.png">
+            <div
+              class="box"
+              data-id="6"
+              data-image="assets/pico-8-videogame.png"
+            >
               <h3>Jeu vidéo Pico 8</h3>
               <h4>Lua</h4>
+            </div>
+          </div>
+          <div class="popup" id="popup">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <h3 class="popup-title" id="popup-title"></h3>
+            <img class="popup-content" id="popup-content" src="" alt="" />
+            <div class="popup-details">
+              <h4 id="popup-tech"></h4>
+              <p id="popup-description"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

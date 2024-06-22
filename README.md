@@ -7,4 +7,6 @@ Portfolio pour candidature au DNMADE Parcours numérique de l'école des Gobelin
 - HTML
 - CSS
 - JavaScript
-- GSAP
+- GSAP + ScrollTrigger
+
+# Technologies

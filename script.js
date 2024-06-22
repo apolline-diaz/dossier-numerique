@@ -89,42 +89,50 @@ boxes.forEach(function (elem) {
     crsr.style.borderRadius = "50%";
     crsr.style.backgroundImage = `none`;
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-  var boxes = document.querySelectorAll(".box");
+  let projectData = {};
 
-  var popup = document.getElementById("popup");
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      projectData = data.projects;
+    })
+    .catch((error) => console.error("Error loading JSON data:", error));
 
-  var popupTitle = document.getElementById("popup-title");
-  var popupContent = document.getElementById("popup-content");
-  var popupTech = document.getElementById("popup-tech");
-  var popupDescription = document.getElementById("popup-description");
-  var popupClose = document.getElementById("popup-close");
+  // Récupérer les éléments nécessaires
+  const boxes = document.querySelectorAll(".box");
+  const popup = document.getElementById("popup");
+  const popupClose = document.getElementById("popup-close");
+  const popupContent = document.getElementById("popup-content");
+  const popupTitle = document.getElementById("popup-title");
+  const popupTech = document.getElementById("popup-tech");
+  const popupDescription = document.getElementById("popup-description");
 
-  boxes.forEach(function (box) {
+  // Écouter les clics sur chaque boîte
+  boxes.forEach((box) => {
     box.addEventListener("click", function () {
-      var imageSrc = box.getAttribute("data-image");
-      var title = box.querySelector("h3").innerText;
-      var subtitle = box.querySelector("h4").innerText;
-      var description = "Description détaillée de l'application mobile.";
+      const projectId = box.getAttribute("data-id");
+      const project = projectData[projectId];
 
-      popupTitle.innerText = title;
-      popupContent.src = imageSrc;
-      popupTech.innerText = subtitle;
-      popupDescription.innerText = description;
+      popupContent.src = project.image;
+      popupTitle.textContent = project.title;
+      popupTech.textContent = project.tech;
+      popupDescription.textContent = project.description;
 
-      popup.classList.add("active");
+      // Afficher le popup lorsque la boîte est cliquée
+      popup.style.display = "block";
     });
   });
 
+  // Écouter les clics pour fermer le popup
   popupClose.addEventListener("click", function () {
-    popup.style.opacity = 0;
+    popup.style.display = "none";
   });
 
-  popup.addEventListener("click", function (event) {
-    if (!event.target.closest(".popup-content")) {
-      popup.style.opacity = 0;
+  // Fermer le popup si l'utilisateur clique en dehors de celui-ci
+  window.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      popup.style.display = "none";
     }
   });
 });

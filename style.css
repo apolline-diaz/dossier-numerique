@@ -310,12 +310,19 @@ img {
   position: fixed;
   background-color: white;
   padding: 5rem;
-  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   gap: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.popup.active {
+  opacity: 1;
+  z-index: 1000; /* Augmentez le z-index pour le mettre au-dessus de la page initiale */
 }
 
 .popup-content {
@@ -369,4 +376,40 @@ footer {
   height: 90vh;
   width: 100%;
   background-color: #edbfff;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    padding: 10px; /* Réduire le rembourrage sur les appareils plus petits */
+  }
+
+  .popup-title {
+    font-size: 1.2rem; /* Réduire la taille de la police pour le titre */
+  }
+
+  .popup-details h4 {
+    font-size: 0.9rem; /* Réduire la taille de la police pour le sous-titre */
+  }
+
+  .popup-details p {
+    font-size: 0.8rem; /* Réduire la taille de la police pour la description */
+  }
+}
+
+@media (max-width: 480px) {
+  .popup {
+    max-width: 95%; /* Ajuster la largeur maximale pour les écrans encore plus petits */
+  }
+
+  .popup-title {
+    font-size: 1rem; /* Réduire encore la taille de la police pour le titre */
+  }
+
+  .popup-details h4 {
+    font-size: 0.8rem; /* Réduire encore la taille de la police pour le sous-titre */
+  }
+
+  .popup-details p {
+    font-size: 0.7rem; /* Réduire encore la taille de la police pour la description */
+  }
 }

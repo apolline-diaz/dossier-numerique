@@ -92,43 +92,39 @@ boxes.forEach(function (elem) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  let projectData = {};
+  var boxes = document.querySelectorAll(".box");
 
-  fetch("data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      projectData = data.projects;
-    })
-    .catch((error) => console.error("Error loading JSON data:", error));
+  var popup = document.getElementById("popup");
 
-  const boxes = document.querySelectorAll(".box");
-  const popup = document.getElementById("popup");
-  const popupClose = document.getElementById("popup-close");
-  const popupContent = document.getElementById("popup-content");
-  const popupTitle = document.getElementById("popup-title");
-  const popupTech = document.getElementById("popup-tech");
-  const popupDescription = document.getElementById("popup-description");
+  var popupTitle = document.getElementById("popup-title");
+  var popupContent = document.getElementById("popup-content");
+  var popupTech = document.getElementById("popup-tech");
+  var popupDescription = document.getElementById("popup-description");
+  var popupClose = document.getElementById("popup-close");
 
-  boxes.forEach((box) => {
+  boxes.forEach(function (box) {
     box.addEventListener("click", function () {
-      const projectId = box.getAttribute("data-id");
-      const project = projectData[projectId];
+      var imageSrc = box.getAttribute("data-image");
+      var title = box.querySelector("h3").innerText;
+      var subtitle = box.querySelector("h4").innerText;
+      var description = "Description détaillée de l'application mobile.";
 
-      popupContent.src = project.image;
-      popupTitle.textContent = project.title;
-      popupTech.textContent = project.tech;
-      popupDescription.textContent = project.description;
-      popup.style.display = "block";
+      popupTitle.innerText = title;
+      popupContent.src = imageSrc;
+      popupTech.innerText = subtitle;
+      popupDescription.innerText = description;
+
+      popup.classList.add("active");
     });
   });
 
   popupClose.addEventListener("click", function () {
-    popup.style.display = "none";
+    popup.style.opacity = 0;
   });
 
-  window.addEventListener("click", function (event) {
-    if (event.target === popup) {
-      popup.style.display = "none";
+  popup.addEventListener("click", function (event) {
+    if (!event.target.closest(".popup-content")) {
+      popup.style.opacity = 0;
     }
   });
 });

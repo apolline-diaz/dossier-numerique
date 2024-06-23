@@ -115,18 +115,20 @@ img {
 }
 
 button {
-  width: 15%;
+  width: 17%;
   border-radius: 50px;
   font-size: 16px;
   border: none;
-  padding: 1rem;
+  padding: 0.75rem 0.5rem;
+  /* background: white;
+  border: 2px solid rgb(255, 181, 255); */
   background-color: rgb(255, 181, 255);
-  color: #111;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: rgb(255, 130, 255);
+  background-color: rgb(255, 68, 255);
+  color: white;
 }
 
 .page1 {

@@ -3,15 +3,15 @@
     {
       "image": "assets/app-mobile.png",
       "title": "Application mobile",
-      "tech": "Kotlin, Spring Boot | 21 jours | Projet collectif à 7 étudiant-es",
-      "description": "Pendant trois semaines, nous avons travaillé en groupe sur notre première application mobile. Un premier temps était consacré au front-end, et un second au back-end. Nous avions la liberté d'imaginer notre propre offre de services. Nous avons créé une application qui permettait de découvrir des spots urbains, pour mettre en avant la beauté urbaine (street art, mobiliers, façades, fontaines, sculptures et fontaines historiques par exemple). L'idée était de permettre à l'utilisateur de trouver les spots urbains autour de lui grâce à une géolocalisation. Nous souhaitons en faire un espace de communauté où chacun-e puisse partager les lieux qu'iels découvraient en mettant en ligne des photos. Nous n'avons pas pu créer les connexion entre front et base de données mais nous avons pu mettre en place la base de données. Je me suis davatange consacré à la partie front-end car j'avais envie d'améliorer le design pour une utilisation optimal de l'application.",
+      "tech": "Kotlin, Spring Boot | 2 semaines | Projet scolaire à 7 étudiant-es",
+      "description": "Pendant trois semaines, nous avons travaillé en groupe sur notre première application mobile. Un premier temps était consacré au front-end et un second au back-end. Nous avions la liberté d'imaginer notre propre offre de services. Nous avons créé une application qui permettait de découvrir des spots urbains, pour mettre en avant la beauté urbaine (street art, mobiliers, façades, fontaines, sculptures historiques par exemple). L'idée était de permettre à l'utilisateur-ice de trouver des spots urbains à proximité. Nous souhaitons en faire un espace de communauté où chacun-e pourrait partager des lieux qu'iels découvriraient en publiant des photos. Nous n'avons pas pu créer les connexions entre front et back mais nous avons pu mettre en place la base de données. Je me suis davatange consacré à la partie front-end car j'avais envie d'améliorer le design pour une utilisation optimal de l'application.",
       "linkGit": "https://github.com/apolline-diaz/App-mobile-Android-Urbanspots",
       "linkDemo": ""
     },
     {
       "image": "assets/movie-app.png",
       "title": "Site de référencement cinéma",
-      "tech": "HTML, CSS, React, Tailwind, API | 21 jours | Projet personnel",
+      "tech": "HTML, CSS, React, Tailwind, API | 3 semaines | Projet personnel",
       "description": "Ce projet est une refonte d'une première page web. Mon point de départ était d'utiliser une base de données de films et de séries. J'ai commencé à m'exercer sur la récupération de données via l'API de The Movie Database en utilisant HTML, CSS et JavaScript (Vanilla). Cet exercice m'a permis de travailler avec une API, le DOM, l'intégration et l'affichage de données, et le design avec CSS. Comme je souhaitais faire évoluer la page pour créer une site web avec plusieurs pages et fonctionnalités, j'ai développé un nouveau projet similaire avec React JS et Tailwind CSS. C'est donc ce projet que je suis en train de développer (voir lien démo). J'ai pu recréer la page d'accueil, ajouter une page pour chaque film et un nouveau design plus minimaliste qui met en valeur les images cinématographiques.",
       "linkGit": "https://github.com/apolline-diaz/Movie-App",
       "linkDemo": "https://apolline-diaz.github.io/Movie-App"
@@ -20,37 +20,37 @@
       "image": "assets/to-do-list.png",
       "title": "To do List",
       "tech": "HTML, Bootstrap, React, Express, PostgreSQL, API REST | 3 jours | Projet personnel",
-      "description": "Gestionnaire de tâches avec une base de données.",
+      "description": "La To do List est souvent un exercice pour démarrer le développement et s'exercer. J'ai souhaité cette fois mettre en place une base de données pour travailler avec SQL et plus spécifiquement MySQL. C'était également l'occasion de découvrir Bootstrap. J'ai pu créer des interactions avec la base de données en suivant le modèle CRUD : create, read, update and delete. L'utilisateur-ice peut ajouter, modifier et supprimer ses tâches. Chaque nouvelle opération fait directement apparaître le résultat sur la page web. Je suis parti d'une interface visuelle simple pour ensuite la faire évoluer. Je me suis cependant confronté aux limites de Bootstrap notammetn concernant l'utilisation de ses composants et leur design brut.",
       "linkGit": "https://github.com/apolline-diaz/to-do-list/tree/main",
       "linkDemo": ""
     },
     {
       "image": "assets/plateforme.png",
       "title": "Plateforme e-commerce",
-      "tech": "HTML, CSS, React, MySQL, Express, API REST | 10 jours | Projet collectif à 8 étudiant-es",
-      "description": "Plateforme de vente de meubles d'occasion, avec une base de données.",
+      "tech": "HTML, CSS, React, MySQL, Express, API REST | 10 jours | Projet scolaire à 8 étudiant-es",
+      "description": "Avec ce projet, nous avons découvert les technologies lié au traitement des base de données. Le principe était de créer une plateforme de meuble \"from scratch\". Nous étions divisé en deux groupes : un dédié au front-end et un autre dédié au back-end. Nous avons découvert MySQL et React, mais également Node Express, à cette occasion. Au bout de 10 jours nous avons pu créer un site avec plusieurs pages : une page d'accueil, une page de produits avec filtres, et une page de produit (avec les détails). Le reste de l'équipe m'a fait confiance pour que je puisse améliorer le design du site web : harmoniser les formes, couleurs et formats, et suivre une ligne graphique.",
       "linkGit": "https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble",
       "linkDemo": "https://vimeo.com/924123048?share=copy"
     },
     {
       "image": "assets/extension.png",
       "title": "Extension Chrome",
-      "tech": "HTML, CSS, JavaScript",
-      "description": "Page Nouvel onglet transformée avec l'univers du studio Ghibli et doté d'outils.",
+      "tech": "HTML, CSS, JavaScript | 10 jours | Projet scolaire à 3 étudiant-es ",
+      "description": "Dans ce projet qui consistait à créer une extension sur le navigateur Chrome, nous avons choisi de proposer un service qui permetter de modifier visuellement la page nouvel onglet. Il s'agissait de permettre à l'utilisateur-ice d'obtenir une page qui ait un nouveau style, avec des outils pratiques à disposition en plus (heure, date, météo). Nous avons choisis une thématique tournée vers l'univers des films du studio Ghibli. L'idée était d'offrir un espace agréable et réconfortant où l'utilisateur-ice pourrait retrouver un univers auquel iel est attaché-e. Ainsi, il était possible d'avoir un fond d'écran différent (issu des films), de pouvoir le changer et d'avoir des informations (titre, synopsis) qui",
       "linkGit": "https://github.com/apolline-diaz/Ghibli-New-Tab-Browser-Extension",
       "linkDemo": "https://vimeo.com/927429709?share=copy"
     },
     {
       "image": "assets/pokedex.png",
       "title": "Pokédex",
-      "tech": "HTML, CSS, React, API",
+      "tech": "HTML, CSS, React, API | 2 jours | Projet personnel",
       "description": "Encyclopédie numérique qui recense les Pokémon à partir de PokeAPI.",
       "linkGit": "https://github.com/apolline-diaz/Pokedex",
       "linkDemo": "https://apolline-diaz.github.io/Pokedex/"
     },
     {
       "image": "assets/pico-8-videogame.png",
-      "title": "Jeu vidéo Pico 8",
+      "title": "Jeu vidéo Pico 8 | 3 jours | Projet personnel",
       "tech": "Lua",
       "description": "Projet personnel pour un anniversaire. Le concept : éliminer 27 chatons pour découvrir son cadeau.",
       "linkGit": "https://github.com/apolline-diaz/Pico-8-Shooter-Birthday-Video-Game",

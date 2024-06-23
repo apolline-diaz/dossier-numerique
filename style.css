@@ -115,14 +115,13 @@ img {
 }
 
 button {
-  width: 25%;
+  width: 15%;
   border-radius: 50px;
-  font-size: 1.5rem;
+  font-size: 16px;
   border: none;
   padding: 1rem;
   background-color: rgb(255, 181, 255);
   color: #111;
-  margin-top: 20px;
 }
 
 button:hover {
@@ -135,7 +134,34 @@ button:hover {
   width: 100%;
   position: relative;
   z-index: 9;
-  padding-top: 12vw;
+  padding-top: 12rem;
+}
+
+.page2,
+.page3,
+.page5 {
+  padding: 5rem;
+}
+
+h1,
+h2 {
+  font-size: 128px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 64px;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-size: 32px;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 1rem 0;
 }
 
 .page2 {
@@ -147,59 +173,35 @@ button:hover {
   z-index: 9;
 }
 
-.page2 h1 {
-  font-weight: 500;
-  color: #111;
-  font-size: 8vw;
-  font-family: PP mori;
-  transform-origin: left;
-}
-
 .page2 h2 {
-  font-size: 8vw;
-  font-weight: 300;
-  transform-origin: left;
-  margin-left: 26vw;
+  margin-left: 25rem;
+  margin-bottom: 2rem;
 }
 
 .page2-container {
+  padding-top: 5rem;
   height: 60vh;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  gap: 3rem;
 }
 
-.page2-left {
-  width: 10%;
+.page2-container img {
+  width: auto;
+  max-height: 400px;
+  padding: 2rem;
+  margin-left: 1rem;
+  border: 1px solid black;
+}
+
+.page2-details {
   position: relative;
-  margin-top: auto;
 }
 
-.page2-left h1 {
-  font-weight: 500;
-  color: #111;
-  font-size: 4vw;
-}
-
-.page2-right {
-  width: 70%;
-  margin-top: auto;
-}
-
-.page2-right h2 {
-  font-size: 4vw;
-  color: #111;
-  text-align: left; /* Assurez-vous que le texte est aligné à gauche */
-  margin-left: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
-
-.page2-right p {
-  font-size: 24px;
-  color: #111;
-  line-height: 2.5rem;
+.page2-details p {
+  line-height: 1.5rem;
 }
 
 #archive-screening {
@@ -209,27 +211,9 @@ button:hover {
 }
 
 .page3 {
-  min-height: 100vh;
-  width: 100%;
-  padding-top: 100px;
-  position: relative;
-  z-index: 9;
-}
-
-.page3 {
-  min-height: 100vh;
   width: 100%;
   position: relative;
   z-index: 9;
-  padding-top: 100px;
-}
-
-.page3 h1 {
-  font-size: 6.8vw;
-  font-weight: 300;
-  color: #111;
-  margin-left: 100px;
-  margin-bottom: 5rem;
 }
 
 .page3-slider {
@@ -237,6 +221,7 @@ button:hover {
   flex-direction: column;
   gap: 20px;
   overflow: hidden;
+  padding: 1rem 0;
 }
 
 .page3-slider .row {
@@ -247,10 +232,10 @@ button:hover {
 
 .page3-slider img {
   width: auto;
-  height: 300px;
-  padding: 2rem;
+  max-height: 200px;
   margin-left: 1rem;
-  background: rgb(255, 181, 255);
+  padding: 1rem;
+  background-color: rgb(255, 181, 255);
 }
 
 @keyframes scroll {
@@ -265,18 +250,10 @@ button:hover {
 .page5 {
   min-height: 100vh;
   width: 100%;
-  padding: 100px 5vw;
   border-bottom: 2px solid #6c6c6c;
   position: relative;
-  z-index: 9;
 }
-.page5 {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  z-index: 9;
-  padding: 140px 100px;
-}
+
 .page5 h2 {
   font-size: 4vw;
   text-transform: uppercase;
@@ -316,7 +293,6 @@ button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  /* border: 5px solid #fd99ff; */
   gap: 2rem;
   transition: opacity 0.3s ease;
   z-index: 10;
@@ -326,14 +302,6 @@ button:hover {
   display: none;
   overflow-y: scroll;
   scroll-behavior: smooth;
-}
-
-.popup-img {
-  width: calc(50%);
-  height: auto;
-  object-fit: contain;
-  margin: 1rem 0;
-  border: 1px solid rgba(134, 134, 134, 0.5);
 }
 
 .popup-close {
@@ -357,14 +325,22 @@ button:hover {
 
 .popup-title {
   font-size: 40px;
+  background-color: white;
   font-weight: 300;
   margin: 1rem 0;
+  padding: 2rem 0;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
 }
 
 .popup-details {
   font-size: 24px;
   float: left;
-  width: calc(66.66% - 20px);
+  width: 50%;
 }
 
 .popup-details h4 {

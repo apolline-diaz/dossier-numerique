@@ -156,12 +156,14 @@ h3 {
 
 h4 {
   font-size: 32px;
+  font-weight: 300;
   margin: 1rem 0;
 }
 
 p {
   font-size: 16px;
   margin: 1rem 0;
+  line-height: 1.5rem;
 }
 
 .page2 {
@@ -214,6 +216,8 @@ p {
   width: 100%;
   position: relative;
   z-index: 9;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .page3-slider {
@@ -252,22 +256,7 @@ p {
   width: 100%;
   border-bottom: 2px solid #6c6c6c;
   position: relative;
-}
-
-.page5 h2 {
-  font-size: 4vw;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 50px;
-}
-
-.page5 h3 {
-  font-size: 2vw;
-  font-weight: 700;
-}
-
-.page5 h4 {
-  font-weight: 300;
+  z-index: 3;
 }
 
 .box {
@@ -323,18 +312,18 @@ p {
   cursor: pointer;
 }
 
-.popup-title {
-  font-size: 40px;
-  background-color: white;
-  font-weight: 300;
-  margin: 1rem 0;
-  padding: 2rem 0;
-}
-
 .popup-container {
   display: flex;
   flex-direction: row;
   padding: 1rem;
+}
+
+.popup-img {
+  width: 600px;
+  height: 100%;
+  margin-right: 2rem;
+  padding: 1rem;
+  background-color: rgb(255, 181, 255);
 }
 
 .popup-details {
@@ -343,15 +332,8 @@ p {
   width: 50%;
 }
 
-.popup-details h4 {
-  margin: 1rem 0;
+.popup-tech {
   color: rgb(91, 91, 91);
-  font-weight: 200;
-}
-
-.popup-details p {
-  margin: 1rem 0;
-  line-height: 2rem;
 }
 
 .btn-demo,

@@ -287,7 +287,6 @@ button:hover {
 .page5 h3 {
   font-size: 2vw;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .page5 h4 {
@@ -317,6 +316,7 @@ button:hover {
   top: 0;
   width: 100%;
   height: 100%;
+  /* border: 5px solid #fd99ff; */
   gap: 2rem;
   transition: opacity 0.3s ease;
   z-index: 10;
@@ -324,6 +324,8 @@ button:hover {
 
 .popup {
   display: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .popup-img {
@@ -335,7 +337,7 @@ button:hover {
 }
 
 .popup-close {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 35px;
   color: #fd99ff;
@@ -367,18 +369,20 @@ button:hover {
 
 .popup-details h4 {
   margin: 1rem 0;
-  font-size: 24px;
+  color: rgb(91, 91, 91);
+  font-weight: 200;
 }
 
 .popup-details p {
   margin: 1rem 0;
+  line-height: 2rem;
 }
 
-/* footer {
-  height: 90vh;
-  width: 100%;
-  background-color: #edbfff;
-} */
+.btn-demo,
+.btn-git {
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+}
 
 @media (max-width: 768px) {
   .popup {

@@ -123,10 +123,12 @@ boxes.forEach(function (elem) {
   const boxes = document.querySelectorAll(".box");
   const popup = document.getElementById("popup");
   const popupClose = document.getElementById("popup-close");
-  const popupContent = document.getElementById("popup-content");
+  const popupImg = document.getElementById("popup-img");
   const popupTitle = document.getElementById("popup-title");
   const popupTech = document.getElementById("popup-tech");
   const popupDescription = document.getElementById("popup-description");
+  const linkDemo = document.getElementById("link-demo");
+  const linkGit = document.getElementById("link-github");
 
   // Écouter les clics sur chaque boîte
   boxes.forEach((box) => {
@@ -134,10 +136,22 @@ boxes.forEach(function (elem) {
       const projectId = box.getAttribute("data-id");
       const project = projectData[projectId];
 
-      popupContent.src = project.image;
+      popupImg.src = project.image;
       popupTitle.textContent = project.title;
       popupTech.textContent = project.tech;
       popupDescription.textContent = project.description;
+
+      // Définir les liens des boutons
+      linkDemo.style.display = project.linkDemo ? "inline-block" : "none";
+      linkGit.style.display = project.linkGit ? "inline-block" : "none";
+
+      // Ajout des événements de clic pour ouvrir les liens
+      linkDemo.onclick = function () {
+        window.open(project.linkDemo, "_blank");
+      };
+      linkGit.onclick = function () {
+        window.open(project.linkGit, "_blank");
+      };
 
       // Afficher le popup lorsque la boîte est cliquée
       popup.style.display = "block";

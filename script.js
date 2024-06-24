@@ -170,3 +170,11 @@ boxes.forEach(function (elem) {
     }
   });
 });
+
+const sliderContent = document.querySelector(".slider-content");
+
+sliderContent.addEventListener("animationiteration", () => {
+  sliderContent.style.animation = "none";
+  sliderContent.offsetHeight; /* trigger reflow */
+  sliderContent.style.animation = "";
+});

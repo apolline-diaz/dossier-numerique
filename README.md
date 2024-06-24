@@ -1,12 +1,28 @@
 ## Dossier numérique
 
-Portfolio pour candidature au DNMADE Parcours numérique de l'école des Gobelins
+![alt text](assets/dossier-numerique-1.png)
 
-# Technologies
+Portfolio pour candidature au DNMADE Parcours numérique de l'école des Gobelins, pour la rentrée de septembre 2024.
+
+## Fonctions
+
+![alt text](assets/dossier-numerique-2.png)
+![alt text](assets/dossier-numerique-3.png)
+
+- Présentation de mon parcours multimédia en cinéma
+- Présentations des projets de développement d'applications web et mobile
+
+## Technologies
 
 - HTML
 - CSS
 - JavaScript
 - GSAP + ScrollTrigger
 
-# Technologies
+## Utilisation
+
+Suivez ce lien pour découvrir le site :
+
+https://apolline-diaz.github.io/dossier-numerique/
+
+![alt text](assets/dossier-numerique-4.png)

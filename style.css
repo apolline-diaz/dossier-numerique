@@ -115,13 +115,12 @@ img {
 }
 
 button {
-  width: 17%;
+  width: 150px;
   border-radius: 50px;
   font-size: 16px;
   border: none;
   padding: 0.75rem 0.5rem;
-  /* background: white;
-  border: 2px solid rgb(255, 181, 255); */
+
   background-color: rgb(255, 181, 255);
 }
 
@@ -223,28 +222,30 @@ p {
 }
 
 .page3-slider {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  overflow: hidden;
   padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  margin-inline: auto;
+  height: 300px;
+  position: relative;
+  margin-top: 2rem;
 }
 
-.page3-slider .row {
+.page3-slider .slider-content {
   display: flex;
-  gap: 10px;
-  animation: scroll 40s linear infinite;
+  width: max-content;
+  animation: scrollleft 30s linear infinite;
 }
 
 .page3-slider img {
   width: auto;
-  max-height: 200px;
+  height: 300px;
   margin-left: 1rem;
   padding: 1rem;
   background-color: rgb(255, 181, 255);
 }
 
-@keyframes scroll {
+@keyframes scrollleft {
   0% {
     transform: translateX(0);
   }

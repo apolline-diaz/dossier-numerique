@@ -176,9 +176,43 @@ p {
   z-index: 9;
 }
 
-.page2 h2 {
-  margin-left: 25rem;
-  margin-bottom: 2rem;
+.page2 .git-link {
+  /* height: 50px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 1rem;
+  align-items: center; */
+  margin-top: 2rem;
+
+  display: inline-block;
+}
+
+.page2 .git-link a {
+  font-size: 24px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s, cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+.page2 .git-img {
+  height: 70%;
+  width: auto;
+  margin-left: 2rem;
 }
 
 .page2-container {
@@ -194,9 +228,8 @@ p {
 .page2-container img {
   width: auto;
   max-height: 400px;
-  padding: 2rem;
   margin-left: 1rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .page2-details {
@@ -205,6 +238,7 @@ p {
 
 .page2-details p {
   line-height: 1.5rem;
+  width: 90%;
 }
 
 #archive-screening {

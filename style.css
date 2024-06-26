@@ -120,7 +120,6 @@ button {
   font-size: 16px;
   border: none;
   padding: 0.75rem 0.5rem;
-
   background-color: rgb(255, 181, 255);
 }
 
@@ -185,7 +184,6 @@ p {
   gap: 1rem;
   align-items: center; */
   margin-top: 2rem;
-
   display: inline-block;
 }
 
@@ -195,6 +193,8 @@ p {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  color: rgb(255, 118, 255);
+
   animation: typing 2s, cursor 0.4s step-end infinite alternate;
 }
 

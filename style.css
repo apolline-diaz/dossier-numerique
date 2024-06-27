@@ -147,6 +147,7 @@ h1,
 h2 {
   font-size: 128px;
   font-weight: 500;
+  margin-bottom: 5rem;
 }
 
 h3 {
@@ -167,24 +168,13 @@ p {
 }
 
 .page2 {
-  min-height: 80vh;
-  width: 100%;
-  padding: 100px 5vw;
-  border-bottom: 2px solid #6c6c6c;
-  position: relative;
-  z-index: 9;
-}
-
-.page2 .git-link {
-  /* height: 50px;
-  width: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  gap: 1rem;
-  align-items: center; */
-  margin-top: 2rem;
-  display: inline-block;
+  flex-direction: column;
+  border-bottom: 2px solid #6c6c6c;
+  flex-direction: column;
+  width: 100%;
+  z-index: 9;
+  padding-bottom: 5rem;
 }
 
 .page2 .git-link a {
@@ -194,7 +184,6 @@ p {
   white-space: nowrap;
   overflow: hidden;
   color: rgb(255, 118, 255);
-
   animation: typing 2s, cursor 0.4s step-end infinite alternate;
 }
 
@@ -209,6 +198,7 @@ p {
     width: 0;
   }
 }
+
 .page2 .git-img {
   height: 70%;
   width: auto;
@@ -216,7 +206,6 @@ p {
 }
 
 .page2-container {
-  padding-top: 5rem;
   height: 60vh;
   width: 100%;
   display: flex;
@@ -234,6 +223,7 @@ p {
 
 .page2-details {
   position: relative;
+  flex: 1;
 }
 
 .page2-details p {
@@ -379,38 +369,26 @@ p {
   margin-right: 1rem;
 }
 
-@media (max-width: 768px) {
-  .popup {
-    padding: 10px; /* Réduire le rembourrage sur les appareils plus petits */
+@media (max-width: 900px) {
+  .page2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .page2-container {
+    height: 100%;
+    flex-direction: column;
   }
 
-  .popup-title {
-    font-size: 1.2rem; /* Réduire la taille de la police pour le titre */
+  .page2-container img,
+  .page2-container p {
+    margin: 10px 0;
   }
 
-  .popup-details h4 {
-    font-size: 0.9rem; /* Réduire la taille de la police pour le sous-titre */
+  .page2 {
+    min-height: 100vh;
   }
 
-  .popup-details p {
-    font-size: 0.8rem; /* Réduire la taille de la police pour la description */
-  }
-}
-
-@media (max-width: 480px) {
-  .popup {
-    max-width: 95%; /* Ajuster la largeur maximale pour les écrans encore plus petits */
-  }
-
-  .popup-title {
-    font-size: 1rem; /* Réduire encore la taille de la police pour le titre */
-  }
-
-  .popup-details h4 {
-    font-size: 0.8rem; /* Réduire encore la taille de la police pour le sous-titre */
-  }
-
-  .popup-details p {
-    font-size: 0.7rem; /* Réduire encore la taille de la police pour la description */
+  .popup-container {
+    flex-direction: column;
   }
 }
